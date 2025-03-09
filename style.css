@@ -1,0 +1,277 @@
+@font-face{/*Font untuk tulisan sebuah Artikel*/
+    font-family: 'caos';
+    src: url("font-style/caos.otf");
+}
+@font-face{/*Font untuk tulisan Header 3*/
+    font-family: 'scp-r';
+    src: url("font-style/SourceCodePro-Regular.otf");
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background:url("photo-style/bg.png") fixed center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    padding: 0.5%;
+    background-color:black;
+    position: relative;
+}
+.container1{
+    display: flex;
+    flex-direction: row;
+}
+.container2{
+    flex-basis: 75%;
+    background-color: rgb(0, 0, 0);
+}
+.container3{
+    font-family: 'caos';
+    flex-basis: 25%;
+    color: aliceblue;
+    margin: 0%;
+}
+h1{
+    text-align: center;
+    border-color: brown;
+    padding: 5% 0%;
+    text-shadow: 3px 3px 3px black;
+}
+h2, article{
+    line-height: 25px;
+    text-align: justify;
+    font-family: 'scp-r';
+}
+article{
+    font-size: 16px;
+    font-family: 'scp-r';
+}
+h2{
+    font-family: 'caos'; 
+}
+main{
+    padding: 3%;
+    overflow: auto;
+    
+}
+nav{
+    margin: 1%;
+    padding: 0%;
+}
+footer{
+    padding: 3% 2%;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-family: 'scp-r';
+}
+.list1{
+    border-radius: 3px black solid;
+    background-color: rgb(0, 0, 0);
+    display: inline;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 2%;
+    color: white;
+    font-family: 'scp-r';
+    font-size: 20px;
+    font-weight: bold;
+}
+.list1:hover{
+    color: red;
+}
+.list2{
+    font-family: 'scp-r';
+}
+.containerKiri{
+    width: 72%;
+    float: left;
+    border: 2px black solid;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.867);
+}
+.container4{
+    padding: 1% 5%;
+    border-radius: 10px;
+}
+.container5{
+    display: flex;
+    gap: 2%;
+    flex-direction: row;
+}
+.container6{
+    flex-basis: 27%;
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 20px;
+    margin-bottom: 2%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.459);
+}
+.container7{
+    border: 1px black solid;
+    padding: 1%;
+    flex-basis: 70%;
+    background-color: rgba(255, 255, 255, 0.616);
+    border-radius: 20px;
+    margin-bottom: 2%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.459);
+    font-size: 12px;
+}
+.container8{
+    display:flex;
+    flex-direction: column;
+}
+.container9{
+    padding: 1%;
+    text-align: center;
+}
+aside{
+    right: 3%;
+    padding: 1%;
+    float: right;
+    position: fixed;
+    width: 24%;
+    border: 2px black solid;
+    border-radius: 10px;
+    background-color: rgba(245, 245, 245, 0.808);
+}
+*{
+    box-sizing: border-box;
+}
+.pp{
+    border-radius: 50%;
+    border: 2px solid black;
+}
+table{
+    margin: 1% 7%;
+    padding: 2% 10%;
+    text-align: left;
+}
+
+
+
+
+@media screen and (max-width: 1340px){
+    .container7{
+        font-size: 8px;
+    }
+}
+@media screen and (max-width: 1150px){
+    .container7{
+        font-size: 7px;
+    }
+    .container1{
+        flex-direction: column-reverse;
+    }
+    h1{
+        margin: 1%;
+        padding: 1%;
+        font-size: 50px;
+    }
+    .container3{
+        background-color: rgb(152, 152, 152);
+    }
+}
+@media screen and (max-width: 1050px) {
+    .container4 h2{
+        font-size: 15px;
+    }
+    article{
+        font-size: 13px;
+    }
+    
+}
+@media screen and (max-width: 750px){
+    .containerKiri{
+        float: none;
+        width: 100%;
+    }
+    aside{
+        margin: 4% 0% 0%;
+        right: 0%;
+        width: 100%;
+        float: none;
+        position: relative;
+        padding: 10%;
+    }
+    aside h2{
+        font-size: 35px;
+    }
+    table{
+        margin: 1% 15%;
+        font-size: 20px;
+    }
+    footer{
+        font-size: 13px;
+    }
+    h1{
+        margin: 2%;
+        font-size: 30px;
+    }
+    .list1{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 600px){
+    footer{
+        font-size: 10px;
+    }
+    .container6{
+        flex-basis: 37%;
+    }
+}
+@media screen and (max-width: 550px) {
+    .container4 h2{
+        font-size: 13px;
+    }
+    article{
+        font-size: 10px;
+    }
+    .container7{
+        font-size: 7px;
+    }
+}
+@media screen and (max-width: 400px){
+    footer{
+        font-size: 7px;
+    }
+    .container7{
+        font-size: 5px;
+    }
+}
+@media screen and (max-width: 350px){
+    table{
+        margin: 1% 15%;
+        font-size: 15px;
+    }
+    .list1{
+        font-size: 10px;
+    }
+    h1{
+        margin: 4% 0%;
+        font-size: 25px;
+    }
+    .container6{
+        border-radius: 18px;
+    }
+}
+@media screen and (max-width: 285px){
+    h1{
+        margin: 4% 0%;
+        font-size: 20px;
+    }
+    .list1{
+        font-size: 8px;
+    }
+    ul{
+        padding: 0%;
+        margin: 0%;
+    }
+    .container7{
+        font-size: 4px;
+        text-align: justify;
+    }
+}
